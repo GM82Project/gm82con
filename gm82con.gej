@@ -18,11 +18,11 @@
 			"final": "",
 			"functions": [
 				{
-					"name": "console_open",
+					"name": "__gm82con_alloc",
 					"extname": "gm82con_alloc",
 					"calltype": 12,
-					"helpline": "console_open()",
-					"hidden": false,
+					"helpline": "",
+					"hidden": true,
 					"argtypes": [],
 					"returntype": 2
 				},
@@ -332,6 +332,11 @@
 					"name": "vk_lf",
 					"value": "chr(10)",
 					"hidden": false
+				},
+				{
+					"name": "vk_escchar",
+					"value": "chr(27)",
+					"hidden": false
 				}
 			]
 		},
@@ -343,14 +348,21 @@
 			"final": "",
 			"functions": [
 				{
-					"name": "console_set_title",
+					"name": "console_clear",
 					"extname": "",
 					"calltype": 2,
-					"helpline": "console_set_title(string)",
+					"helpline": "console_clear()",
 					"hidden": false,
-					"argtypes": [
-						2
-					],
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "console_clear_line",
+					"extname": "",
+					"calltype": 2,
+					"helpline": "console_clear_line()",
+					"hidden": false,
+					"argtypes": [],
 					"returntype": 2
 				},
 				{
@@ -369,6 +381,28 @@
 					"helpline": "console_cursor_show()",
 					"hidden": false,
 					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "console_set_title",
+					"extname": "",
+					"calltype": 2,
+					"helpline": "console_set_title(string)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "console_open",
+					"extname": "",
+					"calltype": 2,
+					"helpline": "console_open(title)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
 					"returntype": 2
 				}
 			],
