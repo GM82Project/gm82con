@@ -13,7 +13,6 @@ This is the table of contents for the documentation.
 - [Constants](#constants)
     - [con_event](#con_event)
     - [con_mode](#con_mode)
-    - [Colors and formatting](#Colors and formatting)
     - [Miscellaneous](#Miscellaneous)
 - [Functions](#functions)
     - [console_open](#console_open)
@@ -80,13 +79,10 @@ Output modes:
 
 Please see [this page](https://learn.microsoft.com/en-us/windows/console/getconsolemode) on MSDN for more information.
 
-### Colors and formatting
+### Miscellaneous
 
 - `cc_...` constants: Color values. Put them in the middle of your string.
 - `cs_...` constants: Style options. Put them in the middle of your string.
-
-### Miscellaneous
-
 - `vk_cr`: Just a carriage return character as a string.
 - `vk_lf`: Just a newline character as a string.
 - `vk_crlf`: A carriage return + newline (CRLF, RN) sequence string that is used to mark the end of a line and the start of a new one.
