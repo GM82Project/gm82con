@@ -179,11 +179,6 @@
 					"hidden": false
 				},
 				{
-					"name": "cc_normal",
-					"value": "chr(27)+\"[0m\"",
-					"hidden": false
-				},
-				{
 					"name": "cc_pink",
 					"value": "chr(27)+\"[95m\"",
 					"hidden": false
@@ -191,11 +186,6 @@
 				{
 					"name": "cc_red",
 					"value": "chr(27)+\"[91m\"",
-					"hidden": false
-				},
-				{
-					"name": "cc_underline",
-					"value": "chr(27)+\"[4m\"",
 					"hidden": false
 				},
 				{
@@ -316,6 +306,16 @@
 				{
 					"name": "con_mode_out_enable_wrap_at_eol_output",
 					"value": "2",
+					"hidden": false
+				},
+				{
+					"name": "cs_normal",
+					"value": "chr(27)+\"[0m\"",
+					"hidden": false
+				},
+				{
+					"name": "cs_underline",
+					"value": "chr(27)+\"[4m\"",
 					"hidden": false
 				},
 				{
