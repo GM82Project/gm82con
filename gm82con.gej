@@ -1,0 +1,378 @@
+{
+	"name": "Game Maker 8.2 Console",
+	"folder": "gm82",
+	"version": "1.0",
+	"author": "nkrapivindev, renex",
+	"date": "26/06/2023",
+	"license": "Free to use, also for commercial games.",
+	"description": "A console window extension for GameMaker 8.2.",
+	"helpfile": "",
+	"hidden": false,
+	"dependencies": [],
+	"files": [
+		{
+			"filename": "gm82con.dll",
+			"origname": "gm82con.dll",
+			"kind": 1,
+			"init": "",
+			"final": "",
+			"functions": [
+				{
+					"name": "console_open",
+					"extname": "gm82con_alloc",
+					"calltype": 12,
+					"helpline": "console_open()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "console_close",
+					"extname": "gm82con_free",
+					"calltype": 12,
+					"helpline": "console_close()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "console_write",
+					"extname": "gm82con_write_string",
+					"calltype": 12,
+					"helpline": "console_write(line)",
+					"hidden": false,
+					"argtypes": [
+						1
+					],
+					"returntype": 2
+				},
+				{
+					"name": "console_input_begin",
+					"extname": "gm82con_input_start",
+					"calltype": 12,
+					"helpline": "console_input_begin()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "console_input_get",
+					"extname": "gm82con_input_peek",
+					"calltype": 12,
+					"helpline": "console_input_get()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 1
+				},
+				{
+					"name": "console_input_clear",
+					"extname": "gm82con_input_clear",
+					"calltype": 12,
+					"helpline": "console_input_clear()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "console_input_end",
+					"extname": "gm82con_input_stop",
+					"calltype": 12,
+					"helpline": "console_input_end()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "console_set_options",
+					"extname": "gm82con_set_console_modes",
+					"calltype": 12,
+					"helpline": "console_set_options(output,input)",
+					"hidden": false,
+					"argtypes": [
+						2,
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "console_handle_events",
+					"extname": "gm82con_handle_events",
+					"calltype": 12,
+					"helpline": "console_handle_events(signalmask)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "console_is_event_signaled",
+					"extname": "gm82con_is_event_signaled",
+					"calltype": 12,
+					"helpline": "console_is_event_signaled(signalmask)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				}
+			],
+			"constants": [
+				{
+					"name": "cc_black",
+					"value": "chr(27)+\"[30m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_blue",
+					"value": "chr(27)+\"[94m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_cyan",
+					"value": "chr(27)+\"[96m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_darkblue",
+					"value": "chr(27)+\"[34m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_darkcyan",
+					"value": "chr(27)+\"[36m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_darkgray",
+					"value": "chr(27)+\"[90m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_darkgreen",
+					"value": "chr(27)+\"[32m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_darkpink",
+					"value": "chr(27)+\"[35m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_darkred",
+					"value": "chr(27)+\"[31m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_darkyellow",
+					"value": "chr(27)+\"[33m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_gray",
+					"value": "chr(27)+\"[37m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_green",
+					"value": "chr(27)+\"[92m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_normal",
+					"value": "chr(27)+\"[0m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_pink",
+					"value": "chr(27)+\"[95m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_red",
+					"value": "chr(27)+\"[91m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_underline",
+					"value": "chr(27)+\"[4m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_white",
+					"value": "chr(27)+\"[97m\"",
+					"hidden": false
+				},
+				{
+					"name": "cc_yellow",
+					"value": "chr(27)+\"[93m\"",
+					"hidden": false
+				},
+				{
+					"name": "con_event_break",
+					"value": "2",
+					"hidden": false
+				},
+				{
+					"name": "con_event_close",
+					"value": "4",
+					"hidden": false
+				},
+				{
+					"name": "con_event_ctrl_c",
+					"value": "1",
+					"hidden": false
+				},
+				{
+					"name": "con_event_logoff",
+					"value": "32",
+					"hidden": false
+				},
+				{
+					"name": "con_event_none",
+					"value": "0",
+					"hidden": false
+				},
+				{
+					"name": "con_event_shutdown",
+					"value": "64",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_dontupdate",
+					"value": "-1",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_auto_position",
+					"value": "256",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_echo_input",
+					"value": "4",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_extended_flags",
+					"value": "128",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_insert_mode",
+					"value": "32",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_line_input",
+					"value": "2",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_mouse_input",
+					"value": "16",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_processed_input",
+					"value": "1",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_quick_edit_mode",
+					"value": "64",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_virtual_terminal_input",
+					"value": "512",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_in_enable_window_input",
+					"value": "8",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_out_disable_newline_auto_return",
+					"value": "8",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_out_enable_lvb_grid_worldwide",
+					"value": "16",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_out_enable_processed_output",
+					"value": "1",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_out_enable_virtual_terminal_processing",
+					"value": "4",
+					"hidden": false
+				},
+				{
+					"name": "con_mode_out_enable_wrap_at_eol_output",
+					"value": "2",
+					"hidden": false
+				},
+				{
+					"name": "vk_cr",
+					"value": "chr(13)",
+					"hidden": false
+				},
+				{
+					"name": "vk_crlf",
+					"value": "(chr(13)+chr(10))",
+					"hidden": false
+				},
+				{
+					"name": "vk_lf",
+					"value": "chr(10)",
+					"hidden": false
+				}
+			]
+		},
+		{
+			"filename": "gm82con.gml",
+			"origname": "gm82con.gml",
+			"kind": 2,
+			"init": "",
+			"final": "",
+			"functions": [
+				{
+					"name": "console_set_title",
+					"extname": "",
+					"calltype": 2,
+					"helpline": "console_set_title(string)",
+					"hidden": false,
+					"argtypes": [
+						2
+					],
+					"returntype": 2
+				},
+				{
+					"name": "console_cursor_hide",
+					"extname": "",
+					"calltype": 2,
+					"helpline": "console_cursor_hide()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				},
+				{
+					"name": "console_cursor_show",
+					"extname": "",
+					"calltype": 2,
+					"helpline": "console_cursor_show()",
+					"hidden": false,
+					"argtypes": [],
+					"returntype": 2
+				}
+			],
+			"constants": []
+		}
+	]
+}
