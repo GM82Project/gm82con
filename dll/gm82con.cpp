@@ -168,23 +168,15 @@ realfunc gm82con_write_string(gmstring lineString) {
 	BOOL bResult = FALSE;
 
 	if (g_hConsoleOutput != INVALID_HANDLE_VALUE && lineString != nullptr) {
-		int len=MultiByteToWideChar(
-			CP_UTF8,
-			MB_ERR_INVALID_CHARS,
-			lineString,
-			-1,
-			NULL,
-			0
-		);
-        
-        WCHAR wcBuffer[4096] = { L'\0' };
+        /* good enough... */
+		WCHAR wcBuffer[4096] = { L'\0' };
 		int iWroteChars = MultiByteToWideChar(
 			CP_UTF8,
 			MB_ERR_INVALID_CHARS,
 			lineString,
 			strlen(lineString),
 			wcBuffer,
-			len
+			sizeof(wcBuffer) / sizeof(wcBuffer[0])
 		);
 
 		if (iWroteChars >= 0) {
