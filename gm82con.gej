@@ -3,7 +3,7 @@
 	"folder": "gm82",
 	"version": "1.0",
 	"author": "nkrapivindev, renex",
-	"date": "26/06/2023",
+	"date": "29/08/2023",
 	"license": "Free to use, also for commercial games.",
 	"description": "A console window extension for GameMaker 8.2.",
 	"helpfile": "",
@@ -120,82 +120,82 @@
 			"constants": [
 				{
 					"name": "cc_black",
-					"value": "chr(27)+\"[30m\"",
+					"value": "ansi_char(27)+\"[30m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_blue",
-					"value": "chr(27)+\"[94m\"",
+					"value": "ansi_char(27)+\"[94m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_cyan",
-					"value": "chr(27)+\"[96m\"",
+					"value": "ansi_char(27)+\"[96m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_darkblue",
-					"value": "chr(27)+\"[34m\"",
+					"value": "ansi_char(27)+\"[34m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_darkcyan",
-					"value": "chr(27)+\"[36m\"",
+					"value": "ansi_char(27)+\"[36m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_darkgray",
-					"value": "chr(27)+\"[90m\"",
+					"value": "ansi_char(27)+\"[90m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_darkgreen",
-					"value": "chr(27)+\"[32m\"",
+					"value": "ansi_char(27)+\"[32m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_darkpink",
-					"value": "chr(27)+\"[35m\"",
+					"value": "ansi_char(27)+\"[35m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_darkred",
-					"value": "chr(27)+\"[31m\"",
+					"value": "ansi_char(27)+\"[31m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_darkyellow",
-					"value": "chr(27)+\"[33m\"",
+					"value": "ansi_char(27)+\"[33m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_gray",
-					"value": "chr(27)+\"[37m\"",
+					"value": "ansi_char(27)+\"[37m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_green",
-					"value": "chr(27)+\"[92m\"",
+					"value": "ansi_char(27)+\"[92m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_pink",
-					"value": "chr(27)+\"[95m\"",
+					"value": "ansi_char(27)+\"[95m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_red",
-					"value": "chr(27)+\"[91m\"",
+					"value": "ansi_char(27)+\"[91m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_white",
-					"value": "chr(27)+\"[97m\"",
+					"value": "ansi_char(27)+\"[97m\"",
 					"hidden": false
 				},
 				{
 					"name": "cc_yellow",
-					"value": "chr(27)+\"[93m\"",
+					"value": "ansi_char(27)+\"[93m\"",
 					"hidden": false
 				},
 				{
@@ -310,32 +310,32 @@
 				},
 				{
 					"name": "cs_normal",
-					"value": "chr(27)+\"[0m\"",
+					"value": "ansi_char(27)+\"[0m\"",
 					"hidden": false
 				},
 				{
 					"name": "cs_underline",
-					"value": "chr(27)+\"[4m\"",
+					"value": "ansi_char(27)+\"[4m\"",
 					"hidden": false
 				},
 				{
 					"name": "vk_cr",
-					"value": "chr(13)",
+					"value": "ansi_char(13)",
 					"hidden": false
 				},
 				{
 					"name": "vk_crlf",
-					"value": "(chr(13)+chr(10))",
+					"value": "(ansi_char(13)+ansi_char(10))",
 					"hidden": false
 				},
 				{
 					"name": "vk_lf",
-					"value": "chr(10)",
+					"value": "ansi_char(10)",
 					"hidden": false
 				},
 				{
 					"name": "vk_escchar",
-					"value": "chr(27)",
+					"value": "ansi_char(27)",
 					"hidden": false
 				}
 			]
