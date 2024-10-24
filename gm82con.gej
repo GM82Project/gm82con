@@ -3,7 +3,7 @@
 	"folder": "gm82",
 	"version": "1.0",
 	"author": "nkrapivindev, renex",
-	"date": "29/08/2023",
+	"date": "24/10/2024",
 	"license": "Free to use, also for commercial games.",
 	"description": "A console window extension for GameMaker 8.2.",
 	"helpfile": "",
@@ -39,7 +39,7 @@
 					"name": "console_write",
 					"extname": "gm82con_write_string",
 					"calltype": 12,
-					"helpline": "console_write(line)",
+					"helpline": "console_write(string)",
 					"hidden": false,
 					"argtypes": [
 						1

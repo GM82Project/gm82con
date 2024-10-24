@@ -156,6 +156,8 @@ realfunc gm82con_alloc(void) {
 }
 
 realfunc gm82con_free(void) {
+    ///console_close()
+    //Closes the console window.
 	BOOL bResult = FALSE;
 	
 	__gm82con_kill_handles();
@@ -165,6 +167,10 @@ realfunc gm82con_free(void) {
 }
 
 realfunc gm82con_write_string(gmstring lineString) {
+    ///console_write(string)
+    //string: data to write to the console window
+    //Writes data to the current line in the console. Special escape codes are
+    //supported.
 	BOOL bResult = FALSE;
 
 	if (g_hConsoleOutput != INVALID_HANDLE_VALUE && lineString != nullptr) {
@@ -205,6 +211,10 @@ realfunc gm82con_write_string(gmstring lineString) {
 }
 
 realfunc gm82con_handle_events(gmreal signalmaskReal) {
+    ///console_handle_events(signalmask)
+    //signalmask: event mask to handle
+    //returns: previous event mask
+    //Defines which console events we wish to handle.
 	DWORD dwPreviousMask = g_dwReturnHandlerMask;
 	DWORD dwInputMask = static_cast<DWORD>(signalmaskReal);
 	g_dwReturnHandlerMask = dwInputMask;
@@ -213,6 +223,9 @@ realfunc gm82con_handle_events(gmreal signalmaskReal) {
 }
 
 realfunc gm82con_is_event_signaled(gmreal signalmaskReal) {
+    ///console_is_event_signaled(signalmask)
+    //signalmask: event mask to check
+    //returns: whether the masked events have been signaled.
 	DWORD dwInputMask = static_cast<DWORD>(signalmaskReal);
 	DWORD dwResult = g_dwSignaledHandlerMask & dwInputMask;
 	/* cancel out the events that have been requested */
@@ -221,6 +234,8 @@ realfunc gm82con_is_event_signaled(gmreal signalmaskReal) {
 }
 
 realfunc gm82con_input_start(void) {
+    ///console_input_begin()
+    //Starts accepting text input in the console.
 	if (g_hInputThread != INVALID_HANDLE_VALUE) {
 		/* input has already started */
 		return true;
@@ -242,15 +257,21 @@ realfunc gm82con_input_start(void) {
 }
 
 strfunc gm82con_input_peek(void) {
+    ///console_input_get()
+    //Returns the current contents of the input buffer.
 	return g_tmpInputBuffer;
 }
 
 realfunc gm82con_input_clear(void) {
+    ///console_input_clear()
+    //Clears the input buffer.
 	SecureZeroMemory(g_tmpInputBuffer, sizeof(g_tmpInputBuffer));
 	return true;
 }
 
 realfunc gm82con_input_stop(void) {
+    ///console_input_end()
+    //Stops accepting console input.
 	if (g_hInputThread != INVALID_HANDLE_VALUE) {
 		g_bRunThread = false;
 		CancelSynchronousIo(g_hInputThread);
@@ -265,6 +286,10 @@ realfunc gm82con_input_stop(void) {
 }
 
 realfunc gm82con_set_console_modes(gmreal outputReal, gmreal inputReal) {
+    ///console_set_options(output,input)
+    //output,input: mode flags
+    //Sets the console's input and output modes. Valid mode flags are defined
+    //<a href="https://learn.microsoft.com/en-us/windows/console/setconsolemode" target="_blank">here</a>.
 	BOOL bResult = TRUE;
 
 	if (outputReal >= 0.0) {
